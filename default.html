@@ -31,7 +31,10 @@
 		<strong>ActivityHTML</strong> uses <strong>HTML</strong> (rather than <em>JSON-LD</em>) as a wire-format for <a href="/activitypub/">ActivityPub</a>.
 	</p>
 	<p>
-		<strong>ActivityHTML</strong> puts <a href="/activitypub/">ActivityPub</a> information in <strong>HTML</strong> using <strong>RDFa</strong> (rather than returned as <em>JSON-LD</em> or <em>JSON</em>).
+		<strong>ActivityHTML</strong> puts <a href="/activitypub/">ActivityPub</a> information in <strong>HTML</strong> using <strong>RDFa</strong> (rather than <em>JSON-LD</em> or <em>JSON</em>).
+	</p>
+	<p>
+		<stron>RDFa</strong> lets you markup HTML with Linked Data name-spaces with something that feels a bit like <strong>Microformats</strong>.
 	</p>
 	<section>
 		<h1>Example</h1>
@@ -48,7 +51,7 @@
   &lt;/head&gt;
 
   &lt;body&gt;
-    &lt;<mark>main property="as:content"</mark> <mark>datatype="rdf:HTML"</mark>&gt;
+    &lt;main <mark>property="as:content"</mark> <mark>datatype="rdf:HTML"</mark>&gt;
       &lt;p&gt;
         Hello world!
       &lt;/p&gt;
@@ -63,6 +66,16 @@
     &lt;/footer&gt;
   &lt;/body&gt;
 &lt;/html&gt;
+			</code></pre>
+		</figure>
+		<p>
+			This is equivalent to the JSON-LD:
+		</p>
+		<figure>
+			<pre><code>
+{
+
+}
 			</code></pre>
 		</figure>
 	</section>
