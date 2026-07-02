@@ -33,6 +33,24 @@
 	<p>
 		<strong>ActivityHTML</strong> puts <a href="/activitypub/">ActivityPub</a> information in <strong>HTML</strong> using <strong>RDFa</strong> (rather than returned as <em>JSON-LD</em> or <em>JSON</em>).
 	</p>
+	<section>
+		<h1>Example</h1>
+		<p>
+			Here is an example of <strong>ActivityHTML</strong>:
+		</p>
+		<figure>
+			<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html <mark>prefix="as: https://www.w3.org/ns/activitystreams#"</mark> <mark>typeof="as:Note"</mark>&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+			</code></pre>
+		</figure>
+	</section>
 	<footer>
 		<include src="author.html"></include>
 		<include src="license.html"></include>
