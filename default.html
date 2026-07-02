@@ -44,6 +44,7 @@
 &lt;html <mark>prefix="as: https://www.w3.org/ns/activitystreams#"</mark> <mark>typeof="as:Note"</mark>&gt;
   &lt;head&gt;
     &lt;meta charset="UTF-8" /&gt;
+    &lt;meta <mark>property="as:to" content="as:Public"</mark> /&gt;
   &lt;/head&gt;
 
   &lt;body&gt;
@@ -53,7 +54,12 @@
       &lt;/p&gt;
     &lt;/main&gt;
     &lt;footer&gt;
-      published on &lt;time <mark>property="as:published"</mark> datetime="2025-08-23T05:53:30-07:00"&gt;August 23rd, 2025&lt;/time&gt;
+      &lt;p&gt;
+        published on &lt;time <mark>property="as:published"</mark> datetime="2025-08-23T05:53:30-07:00"&gt;August 23rd, 2025&lt;/time&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+        written by &lt;a <mark>property="as:attributedTo"</mark> href="https://example.com/~joeblow/"/&gt;Joe Blow&lt;/a&gt;
+      &lt;/p&gt;
     &lt;/footer&gt;
   &lt;/body&gt;
 &lt;/html&gt;
